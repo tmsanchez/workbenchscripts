@@ -1,10 +1,10 @@
-# workbenchscripts
+# Useful Scripts for MysqlWorkbench
 Scripts for Mysql Workbench
 ------------
 
 ## HTML Report from MySQLWorkbench 6.x Schema Model
 
-I wrote a Python pluging to generate an HTML Schema Report from a database model.
+I wrote **HTMLSchemaReport.py** a Python pluging to generate an HTML Schema Report from a database model.
  
 To Install the plugin go to Scripting / Install Plugin/Module then select HTMLShemaReport.py file and restart MySQL Workbench
 ![Install Plugin](https://github.com/tmsanchez/workbenchscripts/blob/master/installaPlugin.png?raw=true)
@@ -33,6 +33,8 @@ MySQLWorkbench allows to design database model easily and also provides an optio
 Using Python you cand create custom plugins to access to model properties  (table and columns definitions for example) please visit this link for more info Scripting and Plugin Development
 
 So, I decided to write a plugin to generate a SQL Script for FirebirdSQL. My goal it's just to show how can we access to schemas, tables and columns properties using classes already defined by MySQLWorkbench.
+
+![Install Plugin](https://github.com/tmsanchez/workbenchscripts/blob/master/runfbscript.jpg?raw=true)
 
 ------------
 You can read more at http://tmsanchezdev.blogspot.mx/2017/04/generating-script-for-firebirdsql-from.html
