@@ -7,7 +7,7 @@ Scripts for Mysql Workbench
 I wrote a Python pluging to generate an HTML Schema Report from a database model.
  
 To Install the plugin go to Scripting / Install Plugin/Module then select HTMLShemaReport.py file and restart MySQL Workbench
-https://github.com/tmsanchez/workbenchscripts/blob/master/installPlugin.png 
+![Install Plugin](https://github.com/tmsanchez/workbenchscripts/blob/master/installPlugin.png)
 
 Open your model and go to Tools / Catalog and select "Database schema in HTML format" and provide a file name in save dialog.
 https://github.com/tmsanchez/workbenchscripts/blob/master/runningPlugin.png 
