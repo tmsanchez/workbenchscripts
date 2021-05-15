@@ -7,7 +7,7 @@ You can open [sakila.md](/sakilasample.md) to check sample output for **Markdown
 
 ### Markdown Format report schema
 
-**MarkdownSchemaReportWB.py** tested on version 8.0.23
+[**MarkdownSchemaReportWB.py**](/MarkdownSchemaReportWB.py) tested on version 8.0.23
 
 Sample output
 
@@ -15,7 +15,7 @@ Sample output
 
 ### HTML Format report schema
 
- **HTMLSchemaReportWB8.py**  tested on version 8.0.23
+ [**HTMLSchemaReportWB8.py**](/HTMLSchemaReportWB8.py)  tested on version 8.0.23
 
 Sample output
 
