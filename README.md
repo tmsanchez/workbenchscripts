@@ -2,6 +2,9 @@
 
 ## Plugins for  MySQLWorkbench 8.x 
 
+You can open [sakila.md](/sakilasample.md) to check sample output for **Markdown** and **HTML** format.
+
+
 ### Markdown Format report schema
 
 **MarkdownSchemaReportWB.py** tested on version 8.0.23
