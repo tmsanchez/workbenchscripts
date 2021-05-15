@@ -2,7 +2,7 @@
 
 ## Plugins for  MySQLWorkbench 8.x 
 
-### HTML Format report schema
+### Markdown Format report schema
 
 **MarkdownSchemaReportWB.py** tested on version 8.0.23
 
@@ -10,13 +10,15 @@ Sample output
 
 ![Install Plugin](https://github.com/tmsanchez/workbenchscripts/blob/master/markdownreport.png?raw=true)
 
+### HTML Format report schema
+
  **HTMLSchemaReportWB8.py**  tested on version 8.0.23
 
 Sample output
 
  ![Install Plugin](https://github.com/tmsanchez/workbenchscripts/blob/master/htmlExample.jpg?raw=true)
 
-### Markdown Format report schema
+
 
 
 
