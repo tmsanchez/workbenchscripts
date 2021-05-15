@@ -7,7 +7,7 @@
 
 ## Export to Markdown Format
 
-Source file: sakilareport.md
+[Source file: sakilareport.md](/sakilareport.md)
 
  ![Install Plugin](https://github.com/tmsanchez/workbenchscripts/blob/master/sakilaMarkdown.png?raw=true)
 
@@ -15,7 +15,7 @@ Source file: sakilareport.md
 
 ## Export it to HTML schema represntation
 
-Source file: sakilareport.html
+[Source file: sakilareport.html](/sakilareport.html)
 
  ![Install Plugin](https://github.com/tmsanchez/workbenchscripts/blob/master/sakila_html_report.png?raw=true)
 
