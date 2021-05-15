@@ -1,0 +1,349 @@
+<html><head> \m<title>Schema Report for database: sakila</title> 
+<style>
+        td,th {
+        text-align:left;
+        vertical-align:middle;
+        }
+        table {
+        border-collapse: collapse;
+        border: 1px solid;
+        }
+        caption, th, td {
+        padding: .2em .8em;
+        border: 1px solid #000000;
+        }
+        caption {
+        background: #D3D3D3;
+        font-weight: bold;
+        font-size: 1.1em;
+        }
+        th {
+        font-weight: bold;
+        background: #000000;
+        color: white;
+        }
+        td {
+        background: #FFFFFF;
+        }
+        </style>
+      </head>
+     <body>
+<h1>Schema Report for database: sakila</h1> 
+<a id="home">Table List </a><br /><ul> 
+ <li><a href="#actor">actor </a></li> 
+<li><a href="#address">address </a></li> 
+<li><a href="#category">category </a></li> 
+<li><a href="#city">city </a></li> 
+<li><a href="#country">country </a></li> 
+<li><a href="#customer">customer </a></li> 
+<li><a href="#film">film </a></li> 
+<li><a href="#film_actor">film_actor </a></li> 
+<li><a href="#film_category">film_category </a></li> 
+<li><a href="#film_text">film_text </a></li> 
+<li><a href="#inventory">inventory </a></li> 
+<li><a href="#language">language </a></li> 
+<li><a href="#payment">payment </a></li> 
+<li><a href="#rental">rental </a></li> 
+<li><a href="#staff">staff </a></li> 
+<li><a href="#store">store </a></li> 
+</ul> 
+<a id="actor"></a><table style="width:100%"><caption>Table: actor </caption> 
+<tr><td>Table Comments</td><td colspan="6"></td></tr> 
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+ <tr><td>actor_id</td><td>SMALLINT</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td></td></tr> 
+<tr><td>first_name</td><td>VARCHAR(45)</td><td>Yes</td><td>No</td><td>No</td><td></td><td></td></tr> 
+<tr><td>last_name</td><td>VARCHAR(45)</td><td>Yes</td><td>No</td><td>No</td><td></td><td></td></tr> 
+<tr><td>last_update</td><td>TIMESTAMP</td><td>Yes</td><td>No</td><td>No</td><td>CURRENT_TIMESTAMP</td><td></td></tr> 
+</table><a href="#home">Table List </a></br> 
+<a id="address"></a><table style="width:100%"><caption>Table: address </caption> 
+<tr><td>Table Comments</td><td colspan="6"></td></tr> 
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+ <tr><td>address_id</td><td>SMALLINT</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td></td></tr> 
+<tr><td>address</td><td>VARCHAR(50)</td><td>Yes</td><td>No</td><td>No</td><td></td><td></td></tr> 
+<tr><td>address2</td><td>VARCHAR(50)</td><td>No</td><td>No</td><td>No</td><td>NULL</td><td></td></tr> 
+<tr><td>district</td><td>VARCHAR(20)</td><td>Yes</td><td>No</td><td>No</td><td></td><td></td></tr> 
+<tr><td>city_id</td><td>SMALLINT</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td></td></tr> 
+<tr><td>postal_code</td><td>VARCHAR(10)</td><td>No</td><td>No</td><td>No</td><td>NULL</td><td></td></tr> 
+<tr><td>phone</td><td>VARCHAR(20)</td><td>Yes</td><td>No</td><td>No</td><td></td><td></td></tr> 
+<tr><td>last_update</td><td>TIMESTAMP</td><td>Yes</td><td>No</td><td>No</td><td>CURRENT_TIMESTAMP</td><td></td></tr> 
+</table><a href="#home">Table List </a></br> 
+<a id="category"></a><table style="width:100%"><caption>Table: category </caption> 
+<tr><td>Table Comments</td><td colspan="6"></td></tr> 
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+ <tr><td>category_id</td><td>TINYINT</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td></td></tr> 
+<tr><td>name</td><td>VARCHAR(25)</td><td>Yes</td><td>No</td><td>No</td><td></td><td></td></tr> 
+<tr><td>last_update</td><td>TIMESTAMP</td><td>Yes</td><td>No</td><td>No</td><td>CURRENT_TIMESTAMP</td><td></td></tr> 
+</table><a href="#home">Table List </a></br> 
+<a id="city"></a><table style="width:100%"><caption>Table: city </caption> 
+<tr><td>Table Comments</td><td colspan="6"></td></tr> 
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+ <tr><td>city_id</td><td>SMALLINT</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td></td></tr> 
+<tr><td>city</td><td>VARCHAR(50)</td><td>Yes</td><td>No</td><td>No</td><td></td><td></td></tr> 
+<tr><td>country_id</td><td>SMALLINT</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td></td></tr> 
+<tr><td>last_update</td><td>TIMESTAMP</td><td>Yes</td><td>No</td><td>No</td><td>CURRENT_TIMESTAMP</td><td></td></tr> 
+</table><a href="#home">Table List </a></br> 
+<a id="country"></a><table style="width:100%"><caption>Table: country </caption> 
+<tr><td>Table Comments</td><td colspan="6"></td></tr> 
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+ <tr><td>country_id</td><td>SMALLINT</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td></td></tr> 
+<tr><td>country</td><td>VARCHAR(50)</td><td>Yes</td><td>No</td><td>No</td><td></td><td></td></tr> 
+<tr><td>last_update</td><td>TIMESTAMP</td><td>Yes</td><td>No</td><td>No</td><td>CURRENT_TIMESTAMP</td><td></td></tr> 
+</table><a href="#home">Table List </a></br> 
+<a id="customer"></a><table style="width:100%"><caption>Table: customer </caption> 
+<tr><td>Table Comments</td><td colspan="6">Table storing all customers. Holds foreign keys to the address table and the store table where this customer is registered.
+
+Basic information about the customer like first and last name are stored in the table itself. Same for the date the record was created and when the information was last updated.</td></tr> 
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+ <tr><td>customer_id</td><td>SMALLINT</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td></td></tr> 
+<tr><td>store_id</td><td>TINYINT</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td></td></tr> 
+<tr><td>first_name</td><td>VARCHAR(45)</td><td>Yes</td><td>No</td><td>No</td><td></td><td></td></tr> 
+<tr><td>last_name</td><td>VARCHAR(45)</td><td>Yes</td><td>No</td><td>No</td><td></td><td></td></tr> 
+<tr><td>email</td><td>VARCHAR(50)</td><td>No</td><td>No</td><td>No</td><td>NULL</td><td></td></tr> 
+<tr><td>address_id</td><td>SMALLINT</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td></td></tr> 
+<tr><td>active</td><td>TINYINT(1)</td><td>Yes</td><td>No</td><td>No</td><td>TRUE</td><td></td></tr> 
+<tr><td>create_date</td><td>DATETIME</td><td>Yes</td><td>No</td><td>No</td><td></td><td></td></tr> 
+<tr><td>last_update</td><td>TIMESTAMP</td><td>No</td><td>No</td><td>No</td><td>CURRENT_TIMESTAMP</td><td></td></tr> 
+</table><a href="#home">Table List </a></br> 
+<a id="film"></a><table style="width:100%"><caption>Table: film </caption> 
+<tr><td>Table Comments</td><td colspan="6"></td></tr> 
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+ <tr><td>film_id</td><td>SMALLINT</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td></td></tr> 
+<tr><td>title</td><td>VARCHAR(255)</td><td>Yes</td><td>No</td><td>No</td><td></td><td></td></tr> 
+<tr><td>description</td><td>TEXT</td><td>No</td><td>No</td><td>No</td><td></td><td></td></tr> 
+<tr><td>release_year</td><td>YEAR</td><td>No</td><td>No</td><td>No</td><td></td><td></td></tr> 
+<tr><td>language_id</td><td>TINYINT</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td></td></tr> 
+<tr><td>original_language_id</td><td>TINYINT</td><td>No</td><td>No</td><td>Yes</td><td>NULL</td><td></td></tr> 
+<tr><td>rental_duration</td><td>TINYINT</td><td>Yes</td><td>No</td><td>No</td><td>3</td><td></td></tr> 
+<tr><td>rental_rate</td><td>DECIMAL(4,2)</td><td>Yes</td><td>No</td><td>No</td><td>4.99</td><td></td></tr> 
+<tr><td>length</td><td>SMALLINT</td><td>No</td><td>No</td><td>No</td><td>NULL</td><td></td></tr> 
+<tr><td>replacement_cost</td><td>DECIMAL(5,2)</td><td>Yes</td><td>No</td><td>No</td><td>19.99</td><td></td></tr> 
+<tr><td>rating</td><td>ENUM('G','PG','PG-13','R','NC-17')</td><td>No</td><td>No</td><td>No</td><td>'G'</td><td></td></tr> 
+<tr><td>special_features</td><td>SET('Trailers','Commentaries','Deleted Scenes','Behind the Scenes')</td><td>No</td><td>No</td><td>No</td><td></td><td></td></tr> 
+<tr><td>last_update</td><td>TIMESTAMP</td><td>Yes</td><td>No</td><td>No</td><td>CURRENT_TIMESTAMP</td><td></td></tr> 
+</table><a href="#home">Table List </a></br> 
+<a id="film_actor"></a><table style="width:100%"><caption>Table: film_actor </caption> 
+<tr><td>Table Comments</td><td colspan="6"></td></tr> 
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+ <tr><td>actor_id</td><td>SMALLINT</td><td>Yes</td><td>Yes</td><td>Yes</td><td></td><td></td></tr> 
+<tr><td>film_id</td><td>SMALLINT</td><td>Yes</td><td>Yes</td><td>Yes</td><td></td><td></td></tr> 
+<tr><td>last_update</td><td>TIMESTAMP</td><td>Yes</td><td>No</td><td>No</td><td>CURRENT_TIMESTAMP</td><td></td></tr> 
+</table><a href="#home">Table List </a></br> 
+<a id="film_category"></a><table style="width:100%"><caption>Table: film_category </caption> 
+<tr><td>Table Comments</td><td colspan="6"></td></tr> 
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+ <tr><td>film_id</td><td>SMALLINT</td><td>Yes</td><td>Yes</td><td>Yes</td><td></td><td></td></tr> 
+<tr><td>category_id</td><td>TINYINT</td><td>Yes</td><td>Yes</td><td>Yes</td><td></td><td></td></tr> 
+<tr><td>last_update</td><td>TIMESTAMP</td><td>Yes</td><td>No</td><td>No</td><td>CURRENT_TIMESTAMP</td><td></td></tr> 
+</table><a href="#home">Table List </a></br> 
+<a id="film_text"></a><table style="width:100%"><caption>Table: film_text </caption> 
+<tr><td>Table Comments</td><td colspan="6"></td></tr> 
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+ <tr><td>film_id</td><td>SMALLINT</td><td>Yes</td><td>Yes</td><td>Yes</td><td></td><td></td></tr> 
+<tr><td>title</td><td>VARCHAR(255)</td><td>Yes</td><td>No</td><td>No</td><td></td><td></td></tr> 
+<tr><td>description</td><td>TEXT</td><td>No</td><td>No</td><td>No</td><td></td><td></td></tr> 
+</table><a href="#home">Table List </a></br> 
+<a id="inventory"></a><table style="width:100%"><caption>Table: inventory </caption> 
+<tr><td>Table Comments</td><td colspan="6"></td></tr> 
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+ <tr><td>inventory_id</td><td>MEDIUMINT</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td></td></tr> 
+<tr><td>film_id</td><td>SMALLINT</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td></td></tr> 
+<tr><td>store_id</td><td>TINYINT</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td></td></tr> 
+<tr><td>last_update</td><td>TIMESTAMP</td><td>Yes</td><td>No</td><td>No</td><td>CURRENT_TIMESTAMP</td><td></td></tr> 
+</table><a href="#home">Table List </a></br> 
+<a id="language"></a><table style="width:100%"><caption>Table: language </caption> 
+<tr><td>Table Comments</td><td colspan="6"></td></tr> 
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+ <tr><td>language_id</td><td>TINYINT</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td></td></tr> 
+<tr><td>name</td><td>CHAR(20)</td><td>Yes</td><td>No</td><td>No</td><td></td><td></td></tr> 
+<tr><td>last_update</td><td>TIMESTAMP</td><td>Yes</td><td>No</td><td>No</td><td>CURRENT_TIMESTAMP</td><td></td></tr> 
+</table><a href="#home">Table List </a></br> 
+<a id="payment"></a><table style="width:100%"><caption>Table: payment </caption> 
+<tr><td>Table Comments</td><td colspan="6"></td></tr> 
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+ <tr><td>payment_id</td><td>SMALLINT</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td></td></tr> 
+<tr><td>customer_id</td><td>SMALLINT</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td></td></tr> 
+<tr><td>staff_id</td><td>TINYINT</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td></td></tr> 
+<tr><td>rental_id</td><td>INT</td><td>No</td><td>No</td><td>Yes</td><td>NULL</td><td></td></tr> 
+<tr><td>amount</td><td>DECIMAL(5,2)</td><td>Yes</td><td>No</td><td>No</td><td></td><td></td></tr> 
+<tr><td>payment_date</td><td>DATETIME</td><td>Yes</td><td>No</td><td>No</td><td></td><td></td></tr> 
+<tr><td>last_update</td><td>TIMESTAMP</td><td>No</td><td>No</td><td>No</td><td>CURRENT_TIMESTAMP</td><td></td></tr> 
+</table><a href="#home">Table List </a></br> 
+<a id="rental"></a><table style="width:100%"><caption>Table: rental </caption> 
+<tr><td>Table Comments</td><td colspan="6"></td></tr> 
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+ <tr><td>rental_id</td><td>INT</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td></td></tr> 
+<tr><td>rental_date</td><td>DATETIME</td><td>Yes</td><td>No</td><td>No</td><td></td><td></td></tr> 
+<tr><td>inventory_id</td><td>MEDIUMINT</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td></td></tr> 
+<tr><td>customer_id</td><td>SMALLINT</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td></td></tr> 
+<tr><td>return_date</td><td>DATETIME</td><td>No</td><td>No</td><td>No</td><td></td><td></td></tr> 
+<tr><td>staff_id</td><td>TINYINT</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td></td></tr> 
+<tr><td>last_update</td><td>TIMESTAMP</td><td>Yes</td><td>No</td><td>No</td><td>CURRENT_TIMESTAMP</td><td></td></tr> 
+</table><a href="#home">Table List </a></br> 
+<a id="staff"></a><table style="width:100%"><caption>Table: staff </caption> 
+<tr><td>Table Comments</td><td colspan="6"></td></tr> 
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+ <tr><td>staff_id</td><td>TINYINT</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td></td></tr> 
+<tr><td>first_name</td><td>VARCHAR(45)</td><td>Yes</td><td>No</td><td>No</td><td></td><td></td></tr> 
+<tr><td>last_name</td><td>VARCHAR(45)</td><td>Yes</td><td>No</td><td>No</td><td></td><td></td></tr> 
+<tr><td>address_id</td><td>SMALLINT</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td></td></tr> 
+<tr><td>picture</td><td>BLOB</td><td>No</td><td>No</td><td>No</td><td></td><td></td></tr> 
+<tr><td>email</td><td>VARCHAR(50)</td><td>No</td><td>No</td><td>No</td><td>NULL</td><td></td></tr> 
+<tr><td>store_id</td><td>TINYINT</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td></td></tr> 
+<tr><td>active</td><td>TINYINT(1)</td><td>Yes</td><td>No</td><td>No</td><td>TRUE</td><td></td></tr> 
+<tr><td>username</td><td>VARCHAR(16)</td><td>Yes</td><td>No</td><td>No</td><td></td><td></td></tr> 
+<tr><td>password</td><td>VARCHAR(40)</td><td>No</td><td>No</td><td>No</td><td>NULL</td><td></td></tr> 
+<tr><td>last_update</td><td>TIMESTAMP</td><td>Yes</td><td>No</td><td>No</td><td>CURRENT_TIMESTAMP</td><td></td></tr> 
+</table><a href="#home">Table List </a></br> 
+<a id="store"></a><table style="width:100%"><caption>Table: store </caption> 
+<tr><td>Table Comments</td><td colspan="6"></td></tr> 
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+ <tr><td>store_id</td><td>TINYINT</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td></td></tr> 
+<tr><td>manager_staff_id</td><td>TINYINT</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td></td></tr> 
+<tr><td>address_id</td><td>SMALLINT</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td></td></tr> 
+<tr><td>last_update</td><td>TIMESTAMP</td><td>Yes</td><td>No</td><td>No</td><td>CURRENT_TIMESTAMP</td><td></td></tr> 
+</table><a href="#home">Table List </a></br> 
+</body></html> 
