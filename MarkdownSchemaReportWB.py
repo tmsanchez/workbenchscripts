@@ -7,6 +7,7 @@ from wb import *
 import grt
 from mforms import Utilities, FileChooser
 import mforms
+import codecs
 
 ModuleInfo = DefineModule(name="DBMarkdownReport", author="Tito Sanchez", version="1.0", description="Database schema in Markdown  format")
 
@@ -25,7 +26,7 @@ def mardownDataDictionary(catalog):
        return 1
     # iterate through columns from schema
     schema = catalog.schemata[0]
-    markdownFile = open(markdownOut, "w")
+    markdownFile = codecs.open(markdownOut, "w", encoding="utf-8")
     markdownFile.write(" \n")
     markdownFile.write("# Schema Report for database: %s \n" % (schema.name))
     print ( "## Table List \n", markdownFile)
