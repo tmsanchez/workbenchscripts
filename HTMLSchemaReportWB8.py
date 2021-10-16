@@ -70,7 +70,7 @@ def htmlDataDictionary(catalog):
         <tr>
         <th>Name</th>
         <th>Data Type</th>
-        <th>Nullable</th>
+        <th>Not Null</th>
         <th>PK</th>
         <th>FK</th>
         <th>Default</th>
